@@ -5,7 +5,8 @@ const obtener = async (pregunta) => {
 
 const saludar = (edad) => {
   document.write ("Tu edad es  "+edad+"<br>  ")
-  if (parseInt(edad) === 18) {
+  edad = parseInt(edad)
+  if ( edad === 18) {
     document.write ("Puedes Votar, sera tu primera votacion")
   }else if(edad > 18){
     document.write ("Puedes Votar, de nuevo")
