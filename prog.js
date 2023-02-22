@@ -1,6 +1,6 @@
-const obtener = async () => {
-  const edad = await prompt("Por favor ingrese edad ");
-  saludar(edad);
+const obtener = async (pregunta) => {
+  const respuesta = await prompt("Por favor ingrese " + pregunta);
+  saludar(respuesta);
 }
 
 const saludar = (edad) => {
@@ -14,4 +14,4 @@ const saludar = (edad) => {
   }
 }
 
-obtener();
+obtener("Edad");
